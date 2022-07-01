@@ -70,15 +70,15 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   scenario = event.sender.first_name
-  scenario = "**♡ I,m scenario** \n\n"
-  scenario += "**♡ I'm Working With Awesome Speed**\n\n"
-  scenario += "**♡ Scenario: LATEST Version**\n\n"
-  scenario += "**♡ My Creator:** [TeamScenario](t.me/TeamScenario)\n\n"
-  scenario += "**♡ Python-Telegram-Bot: v13.7**\n\n"
+  scenario = "**♡ɪᴍ ᴘᴏᴋᴇᴍᴏɴ** \n\n"
+  scenario += "**♡ ɪ'ᴍ ᴡᴏʀᴋɪɴɢ ᴡɪᴛʜ ᴀᴡᴇsᴏᴍᴇ sᴘᴇᴇᴅ**\n\n"
+  scenario += "**♡ ᴘᴏᴋᴇᴍᴏɴ: ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ**\n\n"
+  scenario += "**♡ ᴍʏ ᴄʀᴇᴀᴛᴏʀ:** [ᴘᴏᴋᴇᴍᴏɴ](t.me/tgshadow_fighters)\n\n"
+  scenario += "**♡ ᴘʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ: v13.7**\n\n"
   scenario_BUTTON = [
       [
-          Button.url("Support", f"https://t.me/{SUPPORT_CHAT}"),
-          Button.url("Updates", f"https://t.me/{UPDATES_CHANNEL}"),
+          Button.url("sᴜᴘᴘᴏʀᴛ", f"https://t.me/{SUPPORT_CHAT}"),
+          Button.url("ᴜᴘᴅᴀᴛᴇs", f"https://t.me/{UPDATES_CHANNEL}"),
       ]
   ]
   await telethn.send_file(
@@ -117,26 +117,26 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [Scenario](https://telegra.ph/file/7b8c52bd4c7b8b35ece20.jpg) 」────
-*Hola! {},*
-*I am {} Anime themed advance group management bot with a lot of Sexy Features.*
+────「 [ᴘᴏᴋᴇᴍᴏɴ](https://telegra.ph/file/1a3760e806102c30d47c5.jpg) 」────
+*ʜᴏʟᴀ! {},*
+*ɪ ᴀᴍ {} ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴇxʏ ғᴇᴀᴛᴜʀᴇs.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *Uptime:* `{}`
-• `{}` *users, across* `{}` *chats.*
+• *ᴜᴘᴛɪᴍᴇ:* `{}`
+• `{}` *ᴜsᴇʀs, ᴀᴄʀᴏss* `{}` *ᴄʜᴀᴛs.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+➛ ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
 """
 
 GROUP_START_TEXT = """
-I'm awake already!
-Haven't slept since: {}
+ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!
+ʜᴀᴠᴇɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ: {}
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
                             text=f"⚓ ❄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❄️ ⚓",
-                            url="https://t.me/ScenarioXbot?startgroup=true")
+                            url="https://t.me/PokemonXrobot?startgroup=true")
                     ],
                    [
                        InlineKeyboardButton(text="☘️ ᴀʙᴏᴜᴛ ☘️", callback_data="scenario_"),
@@ -144,10 +144,10 @@ buttons = [
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="✨ sᴜᴘᴘᴏʀᴛ ✨",
+                             text="sᴜᴘᴘᴏʀᴛ",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="✨ ᴜᴩᴅᴀᴛᴇs ✨",
+                             text="ᴜᴩᴅᴀᴛᴇs",
                              url=f"https://t.me/{UPDATES_CHANNEL}")
                      ],
                      [
@@ -252,7 +252,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="[► ʙᴀᴄᴋ ◄]", callback_data="help_back")]]
                     ),
                 )
 
@@ -283,7 +283,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(
-            GROUP_START_IMG, caption= "<b>Yes, dear I'm alive!\nHaven't sleep since</b>: <code>{}</code>".format(
+            GROUP_START_IMG, caption= "<b>ʏᴇs, ᴅᴇᴀʀ ɪ'ᴍ ᴀʟɪᴠᴇ!\nʜᴀᴠᴇɴ'ᴛ sʟᴇᴇᴘ sɪɴᴄᴇ</b>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -291,11 +291,11 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support",
+                            text="sᴜᴘᴘᴏʀᴛ",
                             url=f"https://t.me/{SUPPORT_CHAT}",
                         ),
                         InlineKeyboardButton(
-                            text="Updates",
+                            text="ᴜᴘᴅᴀᴛᴇs",
                             url=f"https://t.me/{UPDATES_CHANNEL}",
                         ),
                     ]
@@ -352,7 +352,7 @@ def scenario_about_callback(update, context):
     first_name = update.effective_user.first_name
     if query.data == "scenario_":
         query.message.edit_text(
-            text=f"Hello dear {first_name}, My name is Scenario. A Powerful Telegram Group Management Bot.\n My developer - @TeamScenario\n\nIf you have any Question, You can join our support chat. \nMy developer will help you. \nCheck Link Below",
+            text=f"Hello dear {first_name}, My name is ᴘᴏᴋᴇᴍᴏɴ. A Powerful Telegram Group Management Bot.\n My developer - @tgshadow_fighters\n\nIf you have any Question, You can join our support chat. \nMy developer will help you. \nCheck Link Below",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -781,7 +781,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info(f"scenario started, Using long polling. | BOT: [@{dispatcher.bot.username}]")
+        LOGGER.info(f"ᴘᴏᴋᴇᴍᴏɴ started, Using long polling. | BOT: [@{dispatcher.bot.username}]")
         updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True, allowed_updates=Update.ALL_TYPES)
 
     if len(argv) not in (1, 3, 4):
