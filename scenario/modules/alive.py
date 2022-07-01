@@ -14,21 +14,21 @@ from scenario import SUPPORT_CHAT
 
 
 PHOTO = [
-    "https://telegra.ph/file/315d78ebea36b0a1b3435.jpg",
-    "https://telegra.ph/file/7bd111132fce009e4605e.jpg",
-    "https://telegra.ph/file/804a5f9a3c32bac1ae15c.jpg",
-    "https://telegra.ph/file/43edaa8914b7ce8998336.jpg",
-    "https://telegra.ph/file/abed92d9b3ff409793324.jpg",
+    "https://telegra.ph/file/570898d2566aba56c157d.jpg",
+    "https://telegra.ph/file/1a3760e806102c30d47c5.jpg",
+    "https://telegra.ph/file/570898d2566aba56c157d.jpg",
+    "https://telegra.ph/file/1a3760e806102c30d47c5.jpg",
+    "https://telegra.ph/file/570898d2566aba56c157d.jpg",
 ]
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ scenario~**\n━━━━━━━━━━━━━━━━━━━\n\n"
-  TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [Team Scenario](https://t.me/TeamScenario)** \n\n"
+  TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ ᴘᴏᴋᴇᴍᴏɴ~**\n━━━━━━━━━━━━━━━━━━━\n\n"
+  TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [ᴘᴏᴋᴇᴍᴏɴ](https://t.me/tgshadow_fighters)** \n\n"
   TEXT += f"» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
   TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
   TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
-  BUTTON = [[Button.url("ʜᴇʟᴘ​", "https://t.me/ScenarioXbot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ​", f"https://t.me/{SUPPORT_CHAT}")]]
+  BUTTON = [[Button.url("ʜᴇʟᴘ​", "https://t.me/PokemonXrobot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ​", f"https://t.me/{SUPPORT_CHAT}")]]
   ran = random.choice(PHOTO)
   await tbot.send_file(event.chat_id, ran, caption=TEXT,  buttons=BUTTON)
 
